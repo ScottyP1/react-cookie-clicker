@@ -35,7 +35,7 @@ function StoreList({ curMulti }) {
                 items.map((item) => <>
                     <div key={item.name} className={`${classes.itemList} row`}>
                         <div className={`col text-start ${classes.item}`} onClick={() => handleClick(item)} >
-                            {id === item.id & windowWidth > 800 && <StoreInfo item={item} />}
+                            {id === item.id & windowWidth > 850 ? <StoreInfo item={item} /> : null}
                             <div onMouseEnter={() => setId(item.id)} onMouseLeave={() => setId(null)}>
                                 <h2 className='fs-4'>
                                     {item.name}

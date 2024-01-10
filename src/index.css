@@ -5,6 +5,9 @@
     max-height: 100%;
     overflow-x: hidden;
     display: contents;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 @media (min-width: 770px) {
