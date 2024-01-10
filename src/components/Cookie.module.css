@@ -34,6 +34,7 @@
     appearance: none;
 }
 
+
 .pulse:hover {
     animation: pulse .8s ease-in-out alternate;
 }

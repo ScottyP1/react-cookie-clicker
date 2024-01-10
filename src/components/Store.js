@@ -20,7 +20,7 @@ function Store() {
     }, 1000)
 
     return (
-        <div className={classes.store}>
+        <div className={`container ${classes.store} `}>
             <h1 className={`text-white ${classes.glow}`} onClick={() => setToggle(!toggle)}>Store</h1>
             <hr className="text-white" />
             {toggle &&

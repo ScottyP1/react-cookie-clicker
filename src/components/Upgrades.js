@@ -6,17 +6,16 @@ function Upgrades() {
     const [toggle, setToggle] = useState(false);
 
     return (
-        <div class="container text-center">
+        <div class="container text-center ">
             <h1 className={`text-white ${classes.glow}`} onClick={() => setToggle(!toggle)}>Upgrades</h1>
             <hr className="text-white" />
             {toggle && <div className={`${classes.itemList} row`}>
-                {upgrades.map((item) =>
-                    <div className={`col-3 text-start ${classes.item}`}>
-                        <div className="text-center">
-                            <h1 className="text-white fs-6 mt-4">{item}</h1>
-                        </div>
-                    </div>
-                )}
+                <div className={`col ${classes.item}`}>
+                    {upgrades.map((item) =>
+                        <button type="button" class="btn btn-primary m-2">{item}</button>
+                    )}
+                </div>
+
             </div>}
 
         </div >
