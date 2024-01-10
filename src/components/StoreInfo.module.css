@@ -1,0 +1,16 @@
+.storeInfo {
+    height: 10px;
+    position: absolute;
+    right: 33.5%;
+}
+
+.storeInfo p {
+
+    display: inline;
+}
+
+.storeCard {
+    background-color: rgba(0, 0, 0, 0.432);
+    color: #fff;
+    background-image: linear-gradient(45deg, #00000096, #1c19ad69);
+}

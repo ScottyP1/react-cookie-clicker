@@ -1,0 +1,41 @@
+.itemQty {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+
+.item {
+    font-size: 1.5em;
+    background-image: linear-gradient(45deg, #00000096, #1c19ad69);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .item {
+        background-image: linear-gradient(45deg, #00000096, #1c19ad69);
+    }
+}
+
+.item:hover {
+    background-image: linear-gradient(45deg, #00000096, #1c19adaf);
+}
+
+.hover:hover {
+    text-shadow: 0 0 2px #ffffff;
+    cursor: pointer;
+}
+
+.itemList {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #3030305d;
+}
+
+.cookie {
+    width: 15px;
+}
+
+.glow:hover {
+    cursor: pointer;
+    text-shadow: -1px -1px #fff;
+}
