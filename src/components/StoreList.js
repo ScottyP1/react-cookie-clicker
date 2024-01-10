@@ -20,7 +20,10 @@ function StoreList({ curMulti }) {
             dispatch(setPerSec(item.perSecond * curMulti))
         }
     });
+<<<<<<< HEAD
 
+=======
+>>>>>>> f220d37e3fced3d27fadc61c49a5e4269afe03be
     useEffect(() => {
         function reportWindowSize() {
             setWindowWidth(window.innerWidth)
@@ -36,7 +39,11 @@ function StoreList({ curMulti }) {
                 items.map((item) => <>
                     <div key={item.name} className={`${classes.itemList} row`}>
                         <div className={`col text-start ${classes.item}`} onClick={() => handleClick(item)} >
+<<<<<<< HEAD
                             {id === item.id & windowWidth > 500 ? <StoreInfo item={item} /> : null}
+=======
+                            {id === item.id & windowWidth > 800 ? <StoreInfo item={item} /> : null}
+>>>>>>> f220d37e3fced3d27fadc61c49a5e4269afe03be
                             <div onMouseEnter={() => setId(item.id)} onMouseLeave={() => setId(null)}>
                                 <h2 className='fs-4'>
                                     {item.name}
