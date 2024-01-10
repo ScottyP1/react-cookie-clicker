@@ -8,6 +8,28 @@
     height: 22em;
     left: 10px;
     top: 10px;
+}.block {
+    position: relative;
+}
+
+.block:before,
+.block:after {
+    content: '';
+    position: absolute;
+    left: 28px;
+    top: 28px;
+    background: linear-gradient(45deg, #ffffff, #0000ff, #ffffff, #ffff00, #ff0000, #ffffff,
+            #0000ff, #ffffff, #ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(80% + 10px);
+    height: calc(80% + 10px);
+    z-index: -1;
+    animation: steam 25s linear infinite;
+    border-radius: 90pc;
+    overflow: hidden;
+        -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .pulse:hover {
