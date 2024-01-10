@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.db0ec655.css",
-    "main.js": "/static/js/main.208e17cf.js",
-    "static/media/background-3883188_1920.jpg": "/static/media/background-3883188_1920.0b54089195fd95e9dd79.jpg",
-    "static/media/cookie.png": "/static/media/cookie.1561f57645caa4bc39ef.png",
-    "index.html": "/index.html",
-    "main.db0ec655.css.map": "/static/css/main.db0ec655.css.map",
-    "main.208e17cf.js.map": "/static/js/main.208e17cf.js.map"
+    "main.css": "/ScottyP1/react-cookie-clicker.git/static/css/main.06e91f1b.css",
+    "main.js": "/ScottyP1/react-cookie-clicker.git/static/js/main.0c560dd4.js",
+    "static/media/background-3883188_1920.jpg": "/ScottyP1/react-cookie-clicker.git/static/media/background-3883188_1920.0b54089195fd95e9dd79.jpg",
+    "static/media/cookie.png": "/ScottyP1/react-cookie-clicker.git/static/media/cookie.1561f57645caa4bc39ef.png",
+    "index.html": "/ScottyP1/react-cookie-clicker.git/index.html",
+    "main.06e91f1b.css.map": "/ScottyP1/react-cookie-clicker.git/static/css/main.06e91f1b.css.map",
+    "main.0c560dd4.js.map": "/ScottyP1/react-cookie-clicker.git/static/js/main.0c560dd4.js.map"
   },
   "entrypoints": [
-    "static/css/main.db0ec655.css",
-    "static/js/main.208e17cf.js"
+    "static/css/main.06e91f1b.css",
+    "static/js/main.0c560dd4.js"
   ]
 }
