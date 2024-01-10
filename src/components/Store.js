@@ -11,8 +11,6 @@ function Store() {
     const dispatch = useDispatch();
     const multiplier = useSelector((state) => state.multiplier);
 
-
-
     const handleMultiplier = (item) => {
         setCurMulti(item);
     };

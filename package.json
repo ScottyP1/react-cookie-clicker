@@ -1,5 +1,6 @@
 {
   "name": "react-cookie-clicker",
+  "homepage": "http://scottyP1.github.io/react-cookie-clicker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
