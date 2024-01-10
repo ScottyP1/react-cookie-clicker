@@ -50,6 +50,9 @@
     animation: steam 25s linear infinite;
     border-radius: 90pc;
     overflow: hidden;
+        -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 @keyframes steam {
