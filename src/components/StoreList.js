@@ -2,10 +2,11 @@ import cookie from '../images/cookie.png';
 import { decrementByAmount, setItems, setPerSec } from '../store/slices/cookiesSlice';
 import classes from './Store.module.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import StoreInfo from './StoreInfo';
 function StoreList({ curMulti }) {
     const [id, setId] = useState(null);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
     const items = useSelector((state) => state.items);
     const cookies = useSelector((state) => state.count);
@@ -18,14 +19,23 @@ function StoreList({ curMulti }) {
             dispatch(setItems({ item, curMulti }));
             dispatch(setPerSec(item.perSecond * curMulti))
         }
-    })
+    });
+    useEffect(() => {
+        function reportWindowSize() {
+            setWindowWidth(window.innerWidth)
+        }
+        // Trigger this function on resize
+        window.addEventListener('resize', reportWindowSize)
+        //  Cleanup for componentWillUnmount
+        return () => window.removeEventListener('resize', reportWindowSize)
+    }, [])
     return (
         <>
             {
                 items.map((item) => <>
                     <div key={item.name} className={`${classes.itemList} row`}>
                         <div className={`col text-start ${classes.item}`} onClick={() => handleClick(item)} >
-                            {id === item.id && <StoreInfo item={item} />}
+                            {id === item.id & windowWidth > 800 ? <StoreInfo item={item} /> : null}
                             <div onMouseEnter={() => setId(item.id)} onMouseLeave={() => setId(null)}>
                                 <h2 className='fs-4'>
                                     {item.name}
