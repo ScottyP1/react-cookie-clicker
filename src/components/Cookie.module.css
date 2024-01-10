@@ -47,9 +47,12 @@
     width: calc(80% + 10px);
     height: calc(80% + 10px);
     z-index: -1;
-    animation: steam 25s linear infinite;
+    animation: steam 20s linear infinite;
     border-radius: 90pc;
     overflow: hidden;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 @keyframes steam {
